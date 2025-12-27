@@ -1,0 +1,315 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(-45deg, #961b9a, #24aa5c, #a21f46, #1b329a);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd54f;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glow-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  animation: pulse 2s infinite;
+  transition: 0.4s;
+}
+.glow-text:hover {
+  color: #0d6efd;
+  text-shadow: 0 0 10px #0d6efd, 0 0 20px #0d6efd, 0 0 30px #0d6efd;
+}
+
+/* Smooth pulse animation */
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 5px #fff;
+  }
+  50% {
+    text-shadow: 0 0 20px #0d6efd, 0 0 30px #0d6efd;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff;
+  }
+}
+ .image{
+  background-image: url("https://burst.shopifycdn.com/photos/macbook-air-on-desk.jpg?width=1000&format=pjpg&exif=0&iptc=0");
+  background-size: cover;
+  width:100%;
+  height:100vh;
+  backdrop-filter: blur(5px);
+ }
+ .landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #2c3e50;
+  background-color: transparent;
+ }
+.landing-text h1 {
+  color: #f0f8ff;
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 1px 1px 5px #00000088;
+  color: #34495e;
+}
+.btn{
+  display: inline-block;
+    padding: 12px 24px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: deepskyblue;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  .but{
+    background-color: white;
+    border-radius: 15px;
+    color:black;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    padding:5px;
+    
+  }
+  .sign-in-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 50px; /* Ellipse shape */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 100px;
+  }
+  
+  .sign-in-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+.heading{
+ padding:40px;
+ border-radius: 20px;
+ margin:50px;
+ background-color: white;
+
+} 
+.but1{
+  background-color:#0d6efd ;
+  border-width:0px;
+  border-radius:15px;
+  color:white;
+  padding:10px
+
+}
+.but2{
+  background-color:#363738 ;
+  border-width:0px;
+  border-radius:15px;
+  color:white;
+  padding:10px;
+  width:100px;
+
+
+}
+.head1{
+  background-image: url("https://www.shutterstock.com/image-photo/hand-woman-hr-manager-using-260nw-2449256721.jpg");
+  background-size: cover;
+  width:100%;
+  height: 100%;
+}
+.hero-text {
+  color: #222222;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.068);
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s ease forwards;
+  margin:100px
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.job-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.job-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.job-desc {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.view-btn {
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.view-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #008cff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+
+
+
+
+h1 {
+  font-size: 40px;
+  color: #111;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: glowTitle 2s ease-in-out infinite alternate;
+}
+
+h1 {
+  font-size: 40px;
+  color: #111;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: glowTitle 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowTitle {
+  from { text-shadow: 0 0 5px #007bff, 0 0 10px #00d4ff; }
+  to   { text-shadow: 0 0 15px #007bff, 0 0 30px #00d4ff; }
+}
+
+.job-description {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeInCard 1s ease forwards;
+  opacity: 0;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeInCard {
+  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(30px); }
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.apply-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  animation: pulseButton 2s infinite;
+}
+
+.apply-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #008cff);
+  transform: translateY(-2px);
+}
+
+@keyframes pulseButton {
+  0% { box-shadow: 0 0 10px #007bff; }
+  50% { box-shadow: 0 0 20px #00d4ff; }
+  100% { box-shadow: 0 0 10px #007bff; }
+}
+
